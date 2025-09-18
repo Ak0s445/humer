@@ -10,6 +10,8 @@ TODO: dolgozók kezelése
 TODO: beosztások kezelése
 TODO: projektek kezelése
 
+TODO: role mező létrehozása a felhasználóknak
+
 
 TODO: A logout automatikusan navigáljon a home-ra
 

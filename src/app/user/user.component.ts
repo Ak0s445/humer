@@ -9,14 +9,18 @@ import { UserService } from '../shared/user.service';
   styleUrl: './user.component.css'
 })
 export class UserComponent {
+
   userList:any[] = []
+
+
   constructor(private user : UserService) { //ide mindig a backend végpont jön, amiből szeretnénk adatot nyerni
 
   }
   ngOnInit() {
     this.user.getUsers().subscribe ({
-      next:(data) => {
-        console.log(data)
+      next:(res :any) => {
+        console.log(res.data)
+        this.userList = res.data
 
       } //a subscribe al feliratkozunk a válaszra, és ha jó minden a konzol fülön a weboldalon kiirja a 2 felvett felhasználót
     })//feliratkozunk, és most lekérjük
