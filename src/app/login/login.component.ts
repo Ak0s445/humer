@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from '../app.component';
+import { Router } from '@angular/router';
 
 
 
@@ -17,7 +18,10 @@ export class LoginComponent {
 
 
 
-  constructor(private builder: FormBuilder, private app : AppComponent) {}
+  constructor(private builder: FormBuilder, 
+    private app : AppComponent,
+    private router: Router)  {} //Router szolgáltatásának injektálása
+    //A Router egy beépített Angular szolgáltatás, amely lehetővé teszi az útvonalváltást, azaz hogy a felhasználót átirányítsd egyik oldalról a másikra az alkalmazásban.
   ngOnInit() {
     this.loginForm = this.builder.group({ //
       user: 'admin',
@@ -31,6 +35,8 @@ login(event:any) {
   if(user=="admin" && pass == "admin"){ //ha mindkettő admin, tovább enged
     console.log("Belépés rendben...")
     this.app.isLoggedIn = true  //az appcomponentben false volt, de itt átáll true-vá
+    localStorage.setItem('isLogedIn', 'true')
+    this.router.navigate (['/employee'])  //átnavigálunk az employee-re
   }
   //alert("Belépés...")
   event.preventDefault() //hogy ne terjedjen tovább az esemény
