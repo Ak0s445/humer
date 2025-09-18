@@ -4,9 +4,12 @@ TODO: kilépés nem működik -pipa
 TODO: user komponens admin útvonalon
         Localhost:4200/admin/user  -pipa
 TODO: felhasználókezelés
+TODO:  felhasználó backendből
 TODO: login adatbázisbol
 TODO: dolgozók kezelése
 TODO: beosztások kezelése
 TODO: projektek kezelése
+
+
 TODO: A logout automatikusan navigáljon a home-ra
 
