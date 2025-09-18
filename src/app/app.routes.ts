@@ -15,7 +15,7 @@ export const routes: Routes = [
     {path: 'employee', component : EmployeeComponent},
     {path:'rank', component : RankComponent},
     {path: 'project', component : ProjectComponent},
-    {path: 'admin', component : AdminComponent,   //Az admin komponensen belül kell h mwegjelenjen
+    {path: 'admin', component : AdminComponent,   //Az admin komponensen belül kell h mwegjelenjen gyerekként:
         children: [
                {path: 'user', component : UserComponent}
         ]

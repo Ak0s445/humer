@@ -14,9 +14,13 @@ export class UserComponent {
 
   }
   ngOnInit() {
-    // this.userList = this.user.getUsers();
-    this.user.getUsers().subscribe //feliratkozunk, és most lekérjük
+    this.user.getUsers().subscribe ({
+      next:(data) => {
+        console.log(data)
 
-    console.log(this.userList)
+      } //a subscribe al feliratkozunk a válaszra, és ha jó minden a konzol fülön a weboldalon kiirja a 2 felvett felhasználót
+    })//feliratkozunk, és most lekérjük
+    //a read művelet már létezik, tudunk felhasználókat lekérni a backendből
+
   }
 }
