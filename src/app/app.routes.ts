@@ -6,6 +6,7 @@ import { EmployeeComponent } from './employee/employee.component';
 import { ProjectComponent } from './project/project.component';
 import { RankComponent } from './rank/rank.component';
 import { UserComponent } from './user/user.component';
+import { AdminComponent } from './admin/admin.component';
 
 export const routes: Routes = [
     {path: 'home', component : HomeComponent},
@@ -14,5 +15,11 @@ export const routes: Routes = [
     {path: 'employee', component : EmployeeComponent},
     {path:'rank', component : RankComponent},
     {path: 'project', component : ProjectComponent},
-    {path: 'user', component : UserComponent}
+    {path: 'admin', component : AdminComponent,   //Az admin komponensen belül kell h mwegjelenjen
+        children: [
+               {path: 'user', component : UserComponent}
+        ]
+    },
+ 
+    
 ];

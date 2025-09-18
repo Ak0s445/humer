@@ -21,7 +21,7 @@ export class AppComponent {
   }
 
   readLogged() {
-    const a =   localStorage.getItem('isLogedIn') //ha a felhasználó belépett akkor az Application fülnél (f12) elöjön kulcsként hogy bejelentkezett
+    const a =   localStorage.getItem('isLoggedIn') //ha a felhasználó belépett akkor az Application fülnél (f12) elöjön kulcsként hogy bejelentkezett
     console.log('Eredmény: ',a)
     if(a != null) {
       this.isLoggedIn = true  

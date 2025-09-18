@@ -35,7 +35,7 @@ login(event:any) {
   if(user=="admin" && pass == "admin"){ //ha mindkettő admin, tovább enged
     console.log("Belépés rendben...")
     this.app.isLoggedIn = true  //az appcomponentben false volt, de itt átáll true-vá
-    localStorage.setItem('isLogedIn', 'true')
+    localStorage.setItem('isLoggedIn', 'true')
     this.router.navigate (['/employee'])  //átnavigálunk az employee-re
   }
   //alert("Belépés...")

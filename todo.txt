@@ -1,11 +1,12 @@
-TODO: belépés után auto navigálás az employee-ra
-TODO: lap frissitése után nem maradunk belépve
-TODO: kilépés nem működik
+TODO: belépés után auto navigálás az employee-ra -pipa
+TODO: lap frissitése után nem maradunk belépve -pipa
+TODO: kilépés nem működik -pipa
 TODO: user komponens admin útvonalon
-        Localhost:4200/admin/user
+        Localhost:4200/admin/user  -pipa
 TODO: felhasználókezelés
 TODO: login adatbázisbol
 TODO: dolgozók kezelése
 TODO: beosztások kezelése
 TODO: projektek kezelése
+TODO: A logout automatikusan navigáljon a home-ra
 
