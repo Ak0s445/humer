@@ -11,7 +11,7 @@ TODO: beosztások kezelése
 TODO: projektek kezelése
 
 TODO: role mező létrehozása a felhasználóknak
-
+TODO: jelszómező frontend és backend oldalon
 
 TODO: A logout automatikusan navigáljon a home-ra
 
